@@ -1,18 +1,18 @@
-def myfunc(lst):
-	print (id(lst), 'ID of lst in myfunc() as soon as the function starts')
-	lst[0] = 999
-	print (id(lst), 'ID of lst in myfunc() after changing value of the 1st element')
-	return lst
+import random 
 
-numbers = [1,2,3]
-print (id(numbers), 'numbers ID ')
+def bubble(numbers):
+	#################
+	# Make your code 
+	#################
 
-## comment out and run
-# retlst = myfunc(numbers)
-# a, *retlst = myfunc(numbers)
-
-retlst[0] = 999
-print (id(retlst), 'retlst ID: returned from myfunc')
-
+	
+	
+numbers = [2,3,0,5,4]
 print (numbers)
-print (retlst)
+bubble(numbers)
+print (numbers)
+
+numbers = [ random.randint(0, 10) for i in range(10) ]
+print (numbers)
+bubble(numbers)
+pritn (numbers)
