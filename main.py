@@ -1,5 +1,4 @@
 import random
-from tkinter import W
 
 
 def bubble(numbers):
