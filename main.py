@@ -5,7 +5,7 @@ def bubble(numbers):
     #loop through numbers (not last one or else encounter range error)
     currentIdx = 0
     nextIdx = 1
-    for n in numbers - 1:
+    for n in numbers[:-1]:
         if n > numbers[nextIdx]:
             # use a dummy variable for swap
             sub = numbers[nextIdx]
