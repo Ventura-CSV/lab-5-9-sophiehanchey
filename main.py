@@ -2,11 +2,21 @@ import random
 
 
 def bubble(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    #loop through numbers (not last one or else encounter range error)
+    currentIdx = 0
+    nextIdx = 1
+    for n in numbers - 1:
+        if n > numbers[nextIdx]:
+            # use a dummy variable for swap
+            sub = numbers[nextIdx]
+            numbers[nextIdx] = n
+            numbers[currentIdx] = sub
+        
+        #increment loop values
+        currentIdx += 1
+        nextIdx += 1
+            
+        
 
 
 def main():
