@@ -3,24 +3,13 @@ import random
 
 def bubble(numbers):
     #loop through numbers (not last one or else encounter range error)
-    currentIdx = 0
-    nextIdx = currentIdx + 1
-    for n in range(len(numbers)-1):
+    for i in range(len(numbers)-1):
         # swap execution
-        if n > numbers[nextIdx]:
+        if numbers[i] > numbers[i+1]:
             # use a dummy variable for swap
-            sub = numbers[nextIdx]
-            numbers[nextIdx] = n
-            numbers[currentIdx] = sub
-        
-        #checking each iteration
-        print(f'{currentIdx}: {n} -> {numbers}')
-        #increment loop values
-        currentIdx += 1
-        nextIdx += 1
-            
-        
-
+            sub = numbers[i+1]
+            numbers[i+1] = numbers[i]
+            numbers[i] = sub
 
 def main():
     numbers = [2, 3, 0, 5, 4]
